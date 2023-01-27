@@ -1,0 +1,29 @@
+<form [formGroup]="taskForm" (ngSubmit)="addrecipe()">
+
+  <h2>Add Recipe</h2>
+  <br>
+
+<label for="recipename">Name of the Recipe </label>
+<br>
+<input type="text" formControlName="recipename">
+<br />
+<br>
+<label for="description">Description </label>
+<br>
+<input type="text" formControlName="description"/>
+<br>
+<br>
+<label for="ingredient">Ingredients </label>
+<br>
+<input type="text" formControlName="ingredient"/>
+<br>
+<label for="steps">Steps on How to Cook </label>
+<br>
+<input type="text" formControlName="steps"/>
+<br>
+
+<br>
+<button type="submit">Add Recipe</button>
+
+</form>
+
